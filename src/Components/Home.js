@@ -28,7 +28,7 @@ function Home(){
             else if(down[1]==='danger'){
                 setStatus("Not a Valid Link! Try again")
                 setFlag('error')
-                console.log("Danger")
+                console.log("Danger ")
             }
             setDownLink(down[0])
         }
