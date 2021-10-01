@@ -1,12 +1,12 @@
-import React,{useState,useEffect} from'react';
+import React,{useState} from'react';
 import {Container,Box,TextField,Grid,Button,Alert,AlertTitle} from '@mui/material';
 import Download from '../LinkToDownload';
 import '../static/css/index.css';
 import drive from '../static/assets/drive.png'
 import google from '../static/assets/google.png'
 function Home(){
-    const[link,setLink]= useState();
-    const[downLink,setDownLink]=useState();
+    const[link,setLink]= useState("");
+    const[downLink,setDownLink]=useState("");
     const[status,setStatus] = useState("ok")
     const[flag,setFlag]=useState('error')
     const [copied, setCopied] = useState("Copy");
@@ -80,11 +80,11 @@ function Home(){
                         {downLink&&<Alert severity={flag}>
                         <AlertTitle severity={flag}><strong>{status}</strong></AlertTitle>
                         <p>
-                            <strong>Download Link </strong>{ flag=='success'?downLink:"Not found"}
+                            <strong>Download Link </strong>{ flag==='success'?downLink:"Not found"}
                         </p>  
                         </Alert>}
                     </Grid>
-                    {flag=='success'&&<Button variant="contained" onClick={handleCopy}>{copied}</Button>}
+                    {flag==='success'&&<Button variant="contained" onClick={handleCopy}>{copied}</Button>}
                 </Grid>
 
         
