@@ -66,7 +66,7 @@ function Home(){
                 <Grid container justifyContent='center' spacing={2}>
                     <Grid item md={7}>
                         <Box sx={{justifyContent:'center',textAlign:'center'}}>  
-                        <TextField id="outlined-basic" fullWidth value={link} onChange={handleChange} label="Paste the public link of Gdrive file here" variant="outlined" />
+                        <TextField id="outlined-basic" fullWidth value={link} onChange={handleChange} label="Paste the public link of GDrive file here" variant="outlined" />
                     </Box>
                     
                     </Grid>
@@ -89,7 +89,7 @@ function Home(){
 
         
             </Box>
-            <Box sx={{textAlign:'center'}} id="Footer"><strong>Created with ❤️ and 🧠 by <a href="https://www.linkedin.com/in/darshankadam15/">Darshan</a></strong></Box>
+            <Box sx={{textAlign:'center'}} id="Footer"><strong>Created with ❤️ and 🧠 by <a href="https://www.linkedin.com/in/darshankadam15/" target="_blank">Darshan</a></strong></Box>
         </Container>
     )
 }
